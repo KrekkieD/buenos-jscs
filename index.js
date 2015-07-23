@@ -67,7 +67,7 @@ function BuenosJscs (options) {
 
     function _checkOptions (options) {
 
-        options = $extend({}, options || {}, DEFAULT_CONFIG);
+        options = $extend({}, DEFAULT_CONFIG, options || {});
 
         if (!options.jscs) {
             options.jscs = new $jscs();
