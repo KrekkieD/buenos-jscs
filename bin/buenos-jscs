@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
 var path = require('path');
-require(path.join(__dirname,'../index.js'));
+new (require(path.resolve(__dirname,'..')))();
