@@ -1,0 +1,35 @@
+{
+  "name": "buenos-jscs",
+  "version": "0.1.0",
+  "description": "JSCS Node wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node test",
+    "buenos-jscs": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://krekkied@github.com/KrekkieD/buenos-jscs.git"
+  },
+  "keywords": [
+    "node",
+    "jscs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrekkieD/buenos-jscs/issues"
+  },
+  "homepage": "https://github.com/KrekkieD/buenos-jscs",
+  "dependencies": {
+    "extend": "^3.0.0",
+    "file": "^0.2.2",
+    "glob-stream": "^5.0.0",
+    "jscs": "^1.13.1",
+    "q": "^1.4.1",
+    "up-the-tree": "^0.3.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
