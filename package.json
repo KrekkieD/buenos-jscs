@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "JSCS Node wrapper",
   "main": "index.js",
+  "bin": {
+    "buenos-jscs": "bin/buenos-jscs"
+  },
   "scripts": {
     "test": "jasmine-node test",
     "buenos-jscs": "node index.js"
