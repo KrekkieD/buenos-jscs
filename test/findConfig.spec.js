@@ -3,9 +3,9 @@
 var $path = require('path');
 
 var $upTheTree = require('up-the-tree');
-var $buenosJscs = require($upTheTree('package.json'));
+var $buenosJscs = require('..');
 
-var projectRoot = $upTheTree('package.json');
+var projectRoot = $upTheTree();
 var testFilesRoot = $path.resolve(projectRoot, 'test/resources/srcFiles');
 
 
@@ -17,7 +17,8 @@ describe('findConfig', function () {
         process.chdir(configDir);
 
         var instance = new $buenosJscs({
-            src: testFilesRoot
+            src: testFilesRoot + '/**/*.js',
+            reporters: false
         });
 
         expect(instance.options.jscsConfig.source).toEqual($path.resolve(configDir, 'package.json'));
@@ -30,7 +31,8 @@ describe('findConfig', function () {
         process.chdir(configDir);
 
         var instance = new $buenosJscs({
-            src: testFilesRoot
+            src: testFilesRoot + '/**/*.js',
+            reporters: false
         });
 
         expect(instance.options.jscsConfig.source).toEqual($path.resolve(configDir, '.jscsrc'));
@@ -43,7 +45,8 @@ describe('findConfig', function () {
         process.chdir(configDir);
 
         var instance = new $buenosJscs({
-            src: testFilesRoot
+            src: testFilesRoot + '/**/*.js',
+            reporters: false
         });
 
         expect(instance.options.jscsConfig.source).toEqual($path.resolve(configDir, '.jscs.json'));
@@ -56,7 +59,8 @@ describe('findConfig', function () {
         process.chdir(configDir);
 
         var instance = new $buenosJscs({
-            src: testFilesRoot
+            src: testFilesRoot + '/**/*.js',
+            reporters: false
         });
 
         expect(instance.options.jscsConfig.source).toEqual('embedded');

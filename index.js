@@ -26,44 +26,51 @@ var DEFAULT_CONFIG = {
 
 function BuenosJscs (options) {
 
-    var self = this;
+    if (this instanceof BuenosJscs) {
 
-    self.options = _checkOptions(options);
+        var self = this;
 
-    self.log = {
-        jscsConfig: self.options.jscsConfig.source,
-        totalCount: 0,
-        successCount: 0,
-        failureCount: 0,
-        files: {}
-    };
+        self.options = _checkOptions(options);
 
-    var processor = new $processor(self);
-    self.checker = self.options.jscs;
+        self.log = {
+            jscsConfig: self.options.jscsConfig.source,
+            totalCount: 0,
+            successCount: 0,
+            failureCount: 0,
+            files: {}
+        };
 
-    self.promise = processor.checkPath()
-        .then(function () {
+        var processor = new $processor(self);
+        self.checker = self.options.jscs;
 
-            if (Array.isArray(self.options.reporters)) {
-                self.options.reporters.forEach(function (reporter) {
+        self.promise = processor.checkPath()
+            .then(function () {
 
-                    if (Array.isArray(reporter)) {
-                        reporter[0](self.log, reporter[1]);
-                    }
-                    else if (typeof reporter === 'function') {
-                        reporter(self.log);
-                    }
-                    else {
-                        throw 'Reporter should be a function or array of function (and options)';
-                    }
+                if (Array.isArray(self.options.reporters)) {
+                    self.options.reporters.forEach(function (reporter) {
 
-                });
-            }
+                        if (Array.isArray(reporter)) {
+                            reporter[0](self.log, reporter[1]);
+                        }
+                        else if (typeof reporter === 'function') {
+                            reporter(self.log);
+                        }
+                        else {
+                            throw 'Reporter should be a function or array of function (and options)';
+                        }
 
-            return self.log;
+                    });
+                }
 
-        });
+                return self.log;
 
+            });
+
+
+    }
+    else {
+        return new BuenosJscs(options);
+    }
 
     function _checkOptions (options) {
 

@@ -7,8 +7,9 @@
     "buenos-jscs": "bin/buenos-jscs"
   },
   "scripts": {
-    "test": "jasmine-node test",
-    "buenos-jscs": "node index.js"
+    "test": "jasmine-node --verbose test",
+    "buenos-jscs": "node index.js",
+    "buenos-jshint": "buenos-jshint"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "up-the-tree": "^0.3.0"
   },
   "devDependencies": {
+    "buenos-jshint": "^0.1.0",
     "jasmine-node": "^1.14.5"
   }
 }
