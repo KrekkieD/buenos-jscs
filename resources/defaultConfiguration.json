@@ -116,7 +116,9 @@
     "lineBreakBeforeClosingBraces": true
   },
   "validateIndentation": 4,
-  "validateNewlineAfterArrayElements": true,
+  "validateNewlineAfterArrayElements": {
+    "ignoreBrackets": true
+  },
   "validateParameterSeparator": ", ",
   "validateQuoteMarks": { "mark": "'", "escape": true }
 }
