@@ -1,6 +1,6 @@
 {
   "name": "buenos-jscs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "JSCS Node wrapper",
   "main": "index.js",
   "bin": {
