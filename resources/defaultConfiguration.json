@@ -3,7 +3,7 @@
   "disallowMultipleSpaces": true,
   "disallowMultipleVarDecl": true,
   "disallowNewlineBeforeBlockStatements": true,
-  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "disallowOperatorBeforeLineBreak": ["."],
   "disallowQuotedKeysInObjects": "allButReserved",
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "~", "!"],
