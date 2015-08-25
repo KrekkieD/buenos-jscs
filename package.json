@@ -37,7 +37,7 @@
     "up-the-tree": "^0.3.0"
   },
   "devDependencies": {
-    "buenos-jshint": "^0.1.0",
+    "buenos-jshint": "^0.2.0",
     "jasmine-node": "^1.14.5"
   }
 }

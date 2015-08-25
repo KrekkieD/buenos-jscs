@@ -16,7 +16,7 @@ module.exports.embeddedConfig = embeddedConfig;
 
 var DEFAULT_CONFIG = {
     reporters: [
-        [$reporter, { path: './reports/jscs.json' }]
+        [$reporter, { path: './reports/jscs-report.json' }]
     ],
     src: [
         './**/*.js',
