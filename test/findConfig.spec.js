@@ -56,6 +56,7 @@ describe('findConfig', function () {
     it('should find embedded config', function () {
 
         var configDir = $path.resolve(projectRoot, 'test/resources/embedded');
+        console.log(configDir);
         process.chdir(configDir);
 
         var instance = new $buenosJscs({

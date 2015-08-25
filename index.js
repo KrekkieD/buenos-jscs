@@ -35,6 +35,7 @@ function BuenosJscs (options) {
         self.log = {
             jscsConfig: self.options.jscsConfig.source,
             totalCount: 0,
+            totalErrorCount: 0,
             successCount: 0,
             failureCount: 0,
             files: {}
