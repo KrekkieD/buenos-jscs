@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jasmine-node --verbose test",
     "buenos-jscs": "node index.js",
-    "buenos-jshint": "buenos-jshint"
+    "buenos-jshint": "buenos-jshint",
+    "lint": "node index.js && buenos-jshint"
   },
   "repository": {
     "type": "git",
