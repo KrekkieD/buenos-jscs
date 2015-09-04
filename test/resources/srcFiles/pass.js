@@ -12,5 +12,3 @@ function booger () {
 }
 
 booger();
-
-function incorrectSpacing(){}
