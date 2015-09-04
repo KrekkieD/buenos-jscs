@@ -3,9 +3,10 @@
 
 function booger () {
 
-    var dingles = true;
+    var dingles = {};
 
-    dingles = false;
+    dingles['default'] = false;
+    dingles['finally'] = false;
 
     return dingles;
 
