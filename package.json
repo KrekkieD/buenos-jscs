@@ -14,14 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://krekkied@github.com/KrekkieD/buenos-jscs.git"
+    "url": "https://github.com/KrekkieD/buenos-jscs.git"
   },
   "keywords": [
-    "node",
-    "jscs"
+    "buenos-lint",
+    "lint",
+    "hint",
+    "javascript",
+    "jscs",
+    "style"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Gregory Cowan <g.cowan@amnzero.nl>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/KrekkieD/buenos-jscs/issues"
   },

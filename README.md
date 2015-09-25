@@ -2,6 +2,8 @@
 
 A NodeJS wrapper around the [JSCS](https://www.npmjs.com/package/jscs) code style checker, for your convenience.
 
+Part of the buenos linting family: [buenos-jshint](https://www.npmjs.com/package/buenos-jshint), [buenos-jscs](https://www.npmjs.com/package/buenos-jscs), [buenos-htmllint](https://www.npmjs.com/package/buenos-htmllint).
+
 ## Installing
 
 ```
@@ -52,7 +54,7 @@ $ npm run buenos-jscs
         someFunction,
         
         // default value:
-        [ $buenosJscs.reporter, { path: './reports/jscs.json' }]
+        [ $buenosJscs.reporter, { path: './reports/buenos-jscs.json' }]
         
     ],
     
@@ -132,7 +134,7 @@ var $buenosJscs = require('buenos-jscs');
 
 new $buenosJscs({
     reporters: [
-        [ $buenosJscs.reporter, { path: './reports/jscs.json' }],
+        [ $buenosJscs.reporter, { path: './reports/buenos-jscs.json' }],
         myReporter
     ]
 });
