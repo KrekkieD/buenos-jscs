@@ -64,7 +64,8 @@ $ npm run buenos-jscs
      */
     src: [
         './**/*.js',
-        '!./node_modules/**/*'
+        '!./**/node_modules/**/*',
+        '!./**/bower_components/**/*'
     ],
     
     
