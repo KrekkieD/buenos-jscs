@@ -1,4 +1,5 @@
 {
+  "maxErrors": -1,
   "disallowMultipleLineStrings": true,
   "disallowMultipleSpaces": true,
   "disallowMultipleVarDecl": true,
