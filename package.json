@@ -33,7 +33,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "extend": "^3.0.0",
-    "glob-stream": "^5.0.0",
+    "globby": "^3.0.1",
     "jscs": "^2.1.0",
     "mkdirp": "^0.5.1",
     "q": "^1.4.1",
